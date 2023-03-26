@@ -118,8 +118,15 @@ button {
 	border-radius: 2px;
 	bottom: 0;
 }
+.mobile-menu-btn {
+	display: block;
+	left: 380px;
+    top: 24px;
+	fill: rgba(46, 47, 66, 1);
+}
 .adress {
 	margin-left: auto;
+	
 }
 .adress-list {
 	display: flex;
