@@ -1,6 +1,13 @@
-@media screen and (min-width 428px) {
+@media screen and (min-width 480px) {
     .container {
-		max-width: 1190px;
+		max-width: 428px;
 	}
+	.header-container {
+		max-width: 100%;
+		height: 70px;
+		left: 0;
+		top: 0;
+	}
+	
 
 }
