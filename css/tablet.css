@@ -2,4 +2,31 @@
     .container {
 		max-width: 768px;
 	}
+	.hero {
+		max-width: 100%;
+		background-color: #2e2f42;
+		text-align: center;
+		padding: 112px 0;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.hero-container {
+		display: flex;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.hero-title {
+		color: #ffffff;
+		font-size: 56px;
+		line-height: 1.07;
+		text-align: center;
+		width: 496px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 36px;
+	}
+	
 }
