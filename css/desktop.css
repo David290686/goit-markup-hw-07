@@ -1,41 +1,125 @@
-@media screen and (min-width 1200px) {
+@media screen and (min-width: 1200px) {
     .container {
 		max-width: 1158px;
 	}
+	.header-container {
+		display: flex;
+	}
 	.hero {
 		max-width: 100%;
-		background-color: #2e2f42;
-		text-align: center;
 		padding: 188px 0;
-		margin-left: auto;
-		margin-right: auto;
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
-		background-repeat: no-repeat;
-		background-position: center;
 	}
 	.hero-title {
-		color: #ffffff;
 		font-size: 56px;
 		line-height: 1.07;
-		text-align: center;
 		width: 496px;
-		margin-left: auto;
-		margin-right: auto;
 		margin-bottom: 48px;
 	}
-	.hero-btn {
-		font-family: inherit;
-		background-color: #4d5ae5;
-		text-align: center;
-		cursor: pointer;
-		color: #ffffff;
+	
+	.skills {
+		max-width: 100%;
+		margin-top: 120px;
+		padding: 0;
+		height: 224px;
+	}
+	.skills-container {
+		display: flex;
+	}
+	.skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+	.skills-title {
+		color: #2e2f42;
 		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.5;
-		padding: 16px 32px;
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 8px;
+	}
+	.skills-item {
+		width: 264px;
+		height: 104px;
+		justify-content: space-between;
+	}
+	.skills-social-list {
+		display: flex;
+		justify-content: center;
+		gap: 24px;
+		margin-bottom: 8px;
+	}
+	.skills-social-item {
+		width: 264px;
+		height: 112px;
+		background: #f4f4fd;
 		border-radius: 4px;
-		border: none;
-		transition: color 250ms linear, background-color 250ms linear;
+	}
+	.skills-social-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		color: #2e2f42;
+		transition: color 250ms linear;
 		animation: cubic-bezier(0.4, 0, 0.2, 1);
 	}
+	.skills-social-link:is(:hover, :focus) {
+		color: #404bbf;
+	}
+	.skills-social-icon {
+		fill: currentColor;
+	}
+	.what-are-we-doing {
+		margin: 120px 0;
+	}
+	.image {
+		padding-top: 0;
+	}
+	.what-are-we-doing-container {
+	}
+	.what-are-we-doing-list {
+		display: flex;
+		text-align: center;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+	.what-are-we-doing-title {
+		color: #2e2f42;
+		font-size: 36px;
+		line-height: 1.11;
+		text-align: center;
+		margin-bottom: 72px;
+	}
+	.our-team {
+		max-width: 100%;
+		height: 780;
+		padding: 120px 0;
+	}
+	.our-team-container {
+		display: flex;
+		
+	}
+	.customers {
+		max-width: 1128;
+		height: 200;
+		padding: 130px 0 120px 0;
+	}
+	.customers-social-item {
+		width: 168px;
+		height: 88px;
+	}
+	.customers-list {
+		display: flex;
+		text-align: center;
+		gap: 24px;
+	}
+	.footer { max-width: 100%;
+		height: 312px;
+		padding: 100px 156px;
+	}
+	.footer-container {
+		display: flex;
+	}
+
 }
