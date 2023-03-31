@@ -121,12 +121,11 @@ button {
 .mobile-menu-btn {
 	display: block;
 	left: 380px;
-    top: 24px;
+	top: 24px;
 	fill: rgba(46, 47, 66, 1);
 }
 .adress {
 	margin-left: auto;
-	
 }
 .adress-list {
 	display: flex;
@@ -167,7 +166,7 @@ button {
 }
 
 .hero {
-    max-width: 100%;
+	max-width: 100%;
 	padding: 112px 0;
 	background-color: #2e2f42;
 	text-align: center;
@@ -224,7 +223,7 @@ button {
 	flex-direction: column;
 }
 .skills-list {
-    flex-direction: column;
+	flex-direction: column;
 	gap: 72px;
 }
 .skills-title {
@@ -814,23 +813,23 @@ button {
 	align-items: center;
 	justify-content: center;
 	width: 16px;
-    height: 16px;
-    left: 20px;
-    top: 20px;
-    border: 1px solid #2E2F42;
-    border-radius: 2px;
+	height: 16px;
+	left: 20px;
+	top: 20px;
+	border: 1px solid #2e2f42;
+	border-radius: 2px;
 	fill: transparent;
 	transition: background-color 250ms, fill 250ms;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox-icon {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    top: 4px;
-    left: 3px;
-	fill: #F4F4FD;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	top: 4px;
+	left: 3px;
+	fill: #f4f4fd;
 }
 .form-checkbox {
 	position: absolute;
@@ -839,9 +838,9 @@ button {
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
-.form-checkbox:checked + .form-custom-checkbox{
+.form-checkbox:checked + .form-custom-checkbox {
 	background-color: #404bbf;
-	border: 1px solid #404BBF;
+	border: 1px solid #404bbf;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -859,16 +858,16 @@ button {
 .checkbox-text {
 	margin-left: 8px;
 	font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: #8e8f99;
 }
 .privacy-policy {
 	font-weight: 400;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
-    text-decoration-line: underline;
-    color: #4D5AE5;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	text-decoration-line: underline;
+	color: #4d5ae5;
 }
