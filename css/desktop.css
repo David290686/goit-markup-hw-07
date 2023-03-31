@@ -39,7 +39,7 @@
 	}
 	.skills-item {
 		width: 264px;
-		height: 104px;
+		
 		justify-content: space-between;
 	}
 	.skills-social-list {
@@ -50,7 +50,7 @@
 	}
 	.skills-social-item {
 		width: 264px;
-		height: 112px;
+		
 		background: #f4f4fd;
 		border-radius: 4px;
 	}
@@ -59,7 +59,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 100%;
+		
 		color: #2e2f42;
 		transition: color 250ms linear;
 		animation: cubic-bezier(0.4, 0, 0.2, 1);
@@ -93,16 +93,13 @@
 	}
 	.our-team {
 		max-width: 100%;
-		height: 780;
 		padding: 120px 0;
 	}
 	.our-team-container {
 		display: flex;
-		
 	}
 	.customers {
 		max-width: 1128;
-		height: 200;
 		padding: 130px 0 120px 0;
 	}
 	.customers-social-item {
@@ -114,9 +111,9 @@
 		text-align: center;
 		gap: 24px;
 	}
-	.footer { max-width: 100%;
-		height: 312px;
-		padding: 100px 156px;
+	.footer { 
+		max-width: 100%;
+		padding: 100px 0;
 	}
 	.footer-container {
 		display: flex;
