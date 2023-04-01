@@ -2,6 +2,10 @@
     .container {
 		max-width: 768px;
 	}
+	.page-header {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
 	.header-mobile-btn {
 		display: none;
 	}
@@ -17,7 +21,34 @@
 	.header-link:active {
 		color: #404bbf;
 	}
-	
+	.adress {
+		margin-left: auto;
+	}
+	.header-adress-list {
+		display: flex;
+		gap: 40px;
+		align-items: center;
+	}
+	.link-mail {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.17;
+	}
+	.link-tel {
+		font-weight: 400;
+		color: #434455;
+		font-size: 12px;
+		line-height: 1.17;
+	}
+	.header-nav-wrap{
+		background-color: transparent;
+		max-width: unset;
+		height: unset;
+		position: static;
+    }
+	.mobile-menu-close {
+        display: none;
+	}
 	.hero {
 		max-width: 100%;
 		padding: 112px 0;
