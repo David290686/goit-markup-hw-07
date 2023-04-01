@@ -39,8 +39,7 @@ button {
 	font-family: inherit;
 }
 .page-header {
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding: 24px 16px;
 	border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -86,6 +85,11 @@ button {
 	align-items: center;
 }
 .header-list {
+	flex-direction: column;
+	margin-bottom: 284px;
+}
+.header-item {
+	margin-bottom: 40px;
 }
 .header-link {
 	text-decoration: none;
@@ -104,6 +108,7 @@ button {
 }
 .header-link:active {
 	display: none;
+	text-decoration: none;
 }
 .header-link.active::after {
 	content: "";
@@ -150,6 +155,7 @@ button {
 	align-items: center;
 	justify-content: center;
 	margin-left: auto;
+	margin-bottom: 30px;
 	transition: background-color 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -164,17 +170,21 @@ button {
 .adress {
 	margin-left: auto;
 }
-.adress-list {
-	display: flex;
-	gap: 40px;
+.header-adress-list {
+	flex-direction: column;
 	align-items: center;
+	margin-bottom: 48px;
+}
+.header-adress-item {
+	margin-bottom: 40px;
 }
 .link-mail {
 	font-style: normal;
 	text-decoration: none;
 	color: #434455;
-	font-size: 16px;
-	line-height: 1.5;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
 	transition: color 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -188,9 +198,10 @@ button {
 .link-tel {
 	font-style: normal;
 	text-decoration: none;
-	color: #434455;
-	font-size: 16px;
-	line-height: 1.5;
+	font-weight: 700;
+	color: #4D5AE5;
+	font-size: 36px;
+	line-height: 1.11;
 	transition: color 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -205,6 +216,7 @@ button {
 	display: flex;
 	justify-content: center;
 	gap: 56px;
+	margin-left: 0;
 }
 .header-menu-social-item {
 	width: 40px;
