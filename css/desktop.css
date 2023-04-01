@@ -2,11 +2,24 @@
     .container {
 		max-width: 1158px;
 	}
+	.page-header {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 	.header-container {
 		display: flex;
 	}
 	.header-mobile-btn {
 		display: none;
+	}
+	.link-mail {
+	    font-size: 16px;
+		line-height: 1.5;
+	}
+	.link-tel {
+		color: #434455;
+		font-size: 16px;
+		line-height: 1.5;
 	}
 	.hero {
 		max-width: 100%;
