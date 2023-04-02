@@ -13,7 +13,7 @@
 	}
 	.header-list {
 		flex-direction: row;
-		gap: 40px;
+		
 	}
 	.header-link {
 		font-weight: 500;
@@ -43,6 +43,7 @@
 		line-height: 1.17;
 	}
 	.header-nav-wrap{
+		display: block;
 		background-color: transparent;
 		max-width: unset;
 		height: unset;
@@ -69,14 +70,13 @@
 	}
 	.skills {
 		width: 100%;
-		margin-top: 96px;
 	}
 	.skills-container {
-		flex-direction: row;
 	}
 	.skills-list {
-		flex-direction: row;
-		gap: 72px;
+	    flex-direction: column;
+		margin: 96px 0;
+	    gap:72px 24px;
 	}
 	.skills-title {
 		font-weight: 700;
@@ -93,33 +93,46 @@
 		display: none;
 	}
 	.our-team {
-		max-width: 100%;
-		padding: 96px 0;
-		gap: 24px;
-    }
+		width: 100%;
+		padding: 96px 108px;
+	}
 	.our-team-container {
-		flex-direction: row;
 		align-items: center;
+	}
+	.our-team-list {
+		flex-direction: column;
 		flex-wrap: wrap;
-		justify-content: center;
+		gap: 24px 64px;
 	}
 	.customers {
 		max-width: 100%;
 	}
 	.customers-list {
-		text-align: center;
-		flex-direction: row;
-		gap: 16px;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 24px 72px;
 	}
 	.customers-social-item {
-		width: 168px;
-		
+		max-width: 168px;
 	}
 	.footer {
-		flex-direction: row;
 		max-width: 100%;
-		gap: 24px;
 		padding: 96px 0px;
+	}
+	.footer-container {
+		flex-direction: column;
+		flex-wrap: wrap;
+		
+	}
+	.footer-form-label {
+		width: 453px;
+	}
+	.footer-form-input {
+		width: 264px;
+	}
+	.modal {
+		width: 408px;
+		padding: 24px;
 	}
 }
 	
