@@ -1,5 +1,5 @@
 @media screen and (min-width: 480px) {
-    .container {
+	.container {
 		max-width: 428px;
 	}
 	.header-container {
@@ -7,6 +7,4 @@
 		left: 0;
 		top: 0;
 	}
-	
-
 }
