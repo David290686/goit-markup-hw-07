@@ -124,6 +124,8 @@ button {
 	bottom: 0;
 }
 .header-mobile-btn {
+	font-family: inherit;
+	cursor: pointer;
 	display: block;
 	align-items: center;
 	left: 380px;
