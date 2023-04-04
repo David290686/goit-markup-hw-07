@@ -6,7 +6,7 @@ body {
 }
 .container {
 	min-width: 320px;
-    max-width: 1170px;
+	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -42,9 +42,7 @@ button {
 }
 .page-header {
 	max-width: 100%;
-	padding: 24px;
-	box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
-    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+	box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 	border-bottom: 1px solid #e7e9fc;
 }
 .page-header .container {
@@ -52,7 +50,7 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-  }
+}
 .header-container {
 	width: 100%;
 	display: flex;
@@ -99,9 +97,12 @@ button {
 	align-items: center;
 }
 .header-list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-bottom: 284px;
 }
 .header-item {
-	margin-bottom: 40px;
 }
 .header-link {
 	text-decoration: none;
@@ -122,17 +123,7 @@ button {
 	display: none;
 	text-decoration: none;
 }
-.header-link.active::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 4px;
-	left: 0px;
-	top: 44px;
-	background: #404bbf;
-	border-radius: 2px;
-	bottom: 0;
-}
+
 .header-mobile-btn {
 	font-family: inherit;
 	cursor: pointer;
@@ -151,22 +142,22 @@ button {
 	background-color: #ffffff;
 	width: 100%;
 	height: 100vh;
-	left: 0;
+	right: 0;
 	top: 0;
 	padding: 24px 24px 40px 40px;
 	z-index: 999;
 	transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+	transition: transform 250ms ease-in-out;
 }
 .header-nav-wrap.is-open {
 	transform: translateX(0);
-  }
-  .header-nav-wrap .header-mobile-btn {
+}
+.header-nav-wrap .header-mobile-btn {
 	position: absolute;
 	top: 16px;
 	right: 16px;
 	color: #fff;
-  }
+}
 .mobile-menu-close {
 	width: 24px;
 	height: 24px;
@@ -176,12 +167,17 @@ button {
 	fill: #2e2f42;
 	border-radius: 50%;
 	display: flex;
+	cursor: pointer;
 	align-items: center;
 	justify-content: center;
 	margin-left: auto;
 	margin-bottom: 30px;
 	transition: background-color 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-close:focus {
+	background-color: #404bbf;
+	fill: #ffffff;
 }
 .mobile-menu-close:focus {
 	background-color: #404bbf;
@@ -322,28 +318,29 @@ button {
 .skills {
 	max-width: 100%;
 	margin-top: 96px;
+	margin-bottom: 96px;
 }
 .skills-container {
-	flex-direction: column;
 }
 .skills-list {
+	display: flex;
 	flex-direction: column;
 	gap: 72px;
 }
 .skills-title {
+	text-align: center;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.1;
 }
 .skills-item {
-	width: 396px;
+	width: 100%;
 }
 .skills-text {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #434455;
-	width: 264px;
 	margin-top: 8px;
 }
 .skills-social-list {
@@ -355,26 +352,25 @@ button {
 .our-team {
 	max-width: 100%;
 	background-color: #f4f4fd;
-	padding: 96px 0;
-	gap: 72px;
+	padding: 96px 82px;
 }
 .our-team-container {
-	flex-direction: row;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
 }
 .our-team-title {
+	text-align: center;
 	color: #2e2f42;
 	font-size: 36px;
 	line-height: 1.11;
 	text-align: center;
-	margin-bottom: 72px;
 }
 .our-team-list {
 	display: flex;
-	flex-direction: row;
-	gap: 24px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 72px;
 	color: #2e2f42;
 	font-size: 20px;
 	line-height: 1.2;
@@ -384,6 +380,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	padding: 0px 0px 32px;
 	gap: 32px;
 	background: #ffffff;
@@ -446,27 +443,32 @@ button {
 }
 .customers {
 	max-width: 100%;
-	padding: 0;
-	margin-top: 96px;
+	padding-top: 96px;
+	padding-bottom: 96px;
 }
 .customers-container {
-	width: 396px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 72px;
 }
 .customers-title {
 	color: #2e2f42;
 	font-size: 36px;
 	line-height: 1.11;
 	text-align: center;
-	margin-bottom: 72px;
 }
 .customers-list {
+	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 16px 72px;
+	gap: 72px;
 }
 .customers-social-item {
-	width: 190px;
+	width: calc((100% - 16px) / 2);
+	height: 88px;
 }
 .customers-social-link {
 	display: flex;
@@ -488,12 +490,10 @@ button {
 	fill: currentColor;
 }
 .footer {
-	flex-direction: column;
 	max-width: 100%;
-	height: 664px;
-	gap: 72px;
 	background-color: #2e2f42;
-	padding: 96px 0px;
+	padding-top: 96px;
+	padding-bottom: 96px;
 }
 .footer-text {
 	font-size: 16px;
@@ -504,7 +504,11 @@ button {
 	width: 264px;
 }
 .footer-container {
+	display: flex;
 	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	gap: 72px;
 }
 .footer-logo {
 	text-transform: uppercase;
@@ -526,11 +530,17 @@ button {
 .footer-logo-list {
 	display: flex;
 	align-items: center;
-	margin-right: 120px;
+	justify-content: center;
 }
 .footer-logo-item {
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 .footer-icon-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .footer-icon-text {
 	font-size: 16px;
@@ -570,17 +580,17 @@ button {
 
 .footer-modal-form {
 	display: flex;
-	align-items: end;
-	gap: 24px;
+	flex-direction: column;
+	align-items: center;
 	padding: 0px;
 	width: 453px;
 	height: 80px;
-	left: 828px;
-	top: 100px;
+	gap: 16px;
 	border-radius: 4px;
 	margin-left: auto;
 }
 .footer-form-label {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
