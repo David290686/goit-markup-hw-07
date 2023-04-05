@@ -45,20 +45,15 @@
 	.hero-title {
 		margin-bottom: 48px;
 	}
-
-	.skills {
+    .skills {
 		max-width: 100%;
-		margin-top: 120px;
-		padding: 0;
-		height: 224px;
-	}
-	.skills-container {
-		display: flex;
+		padding: 120px 0;
+		
 	}
 	.skills-list {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 24px;
 	}
 	.skills-title {
 		color: #2e2f42;
@@ -68,8 +63,7 @@
 		margin-bottom: 8px;
 	}
 	.skills-item {
-		width: 264px;
-
+		width: calc((100% - 72px) / 4);
 		justify-content: space-between;
 	}
 	.skills-social-list {
@@ -80,16 +74,13 @@
 	}
 	.skills-social-item {
 		width: 264px;
-
-		background: #f4f4fd;
+        background: #f4f4fd;
 		border-radius: 4px;
 	}
 	.skills-social-link {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
-
 		color: #2e2f42;
 		transition: color 250ms linear;
 		animation: cubic-bezier(0.4, 0, 0.2, 1);
@@ -101,16 +92,17 @@
 		fill: currentColor;
 	}
 	.what-are-we-doing {
-		margin: 120px 0;
+		display: block;
+		width: 100%;
+		margin-bottom: 120px;
+		
 	}
 	.image {
 		padding-top: 0;
 	}
-	.what-are-we-doing-container {
-		display: block;
-	}
 	.what-are-we-doing-list {
-		display: block;
+		display: flex;
+		flex-direction: row;
 		text-align: center;
 		flex-wrap: wrap;
 		gap: 24px;
@@ -128,6 +120,29 @@
 	}
 	.our-team-container {
 		display: flex;
+		align-items: center;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	.our-team-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 24px;
+		color: #2e2f42;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	.our-team-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 0px 32px;
+		gap: 32px;
+		background: #ffffff;
+		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+		border-radius: 0px 0px 4px 4px;
 	}
 	.customers {
 		width: 100%;
