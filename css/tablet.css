@@ -109,26 +109,31 @@
 	}
 	.skills {
 		width: 100%;
+		padding: 96px 0;
 	}
 	.skills-container {
 	}
 	.skills-list {
+		display: flex;
 		flex-direction: column;
-		margin: 96px 0;
+		flex-wrap: wrap;
 		gap: 72px 24px;
 	}
 	.skills-title {
+		text-align: left;
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 1.1;
 	}
 	.skills-item {
-		width: 356px;
+		display: flex;
+		flex-direction: column;
+		width: calc((100% - 24px) / 2);
 	}
 	.skills-social-list {
 		display: none;
 	}
-	.what-are-we-doing-container {
+	.what-are-we-doing {
 		display: none;
 	}
 	.our-team {
@@ -136,12 +141,20 @@
 		padding: 96px 108px;
 	}
 	.our-team-container {
-		align-items: center;
-	}
-	.our-team-list {
+		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		gap: 24px 64px;
+		gap: 72px;
+	}
+	.our-team-list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 64px 24px;
+	}
+	.our-team-item {
+		width: calc((100% - 24px) / 2);
+		
 	}
 	.customers {
 		max-width: 100%;
