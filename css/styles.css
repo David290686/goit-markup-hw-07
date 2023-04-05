@@ -317,8 +317,7 @@ button {
 }
 .skills {
 	max-width: 100%;
-	margin-top: 96px;
-	margin-bottom: 96px;
+	padding: 96px 0;
 }
 .skills-container {
 }
@@ -346,7 +345,7 @@ button {
 .skills-social-list {
 	display: none;
 }
-.what-are-we-doing-container {
+.what-are-we-doing {
 	display: none;
 }
 .our-team {
@@ -357,6 +356,7 @@ button {
 .our-team-container {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	gap: 72px;
 }
 .our-team-title {
@@ -380,7 +380,6 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	padding: 0px 0px 32px;
 	gap: 32px;
 	background: #ffffff;
