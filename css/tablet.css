@@ -4,30 +4,27 @@
 	}
 	.page-header {
 		max-width: 100%;
-		max-height: 72px;
-		padding: 16px;
-		border-bottom: 1px solid #e7e9fc;
+		height: 72px;
+		padding: 24px 16px;
 	}
 	.header-container {
-		width: 100%;
-		display: block;
+		
+		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
+		
+		margin: 0;
+		
+		
 	}
 	.header-nav {
-		width: 100%;
-		display: block;
+		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
 	}
-	
-	
 	.header-list {
+		display: flex;
+		flex-direction: row;
 		
+	    gap: 40px;
 	}
 	.header-link {
 		font-weight: 500;
@@ -49,12 +46,12 @@
 		bottom: 0;
 	}
 	.adress {
-		margin-left: auto;
+		display: block;
 	}
-	.header-adress-list {
+	.adress-list {
 		display: flex;
-		gap: 40px;
-		align-items: center;
+		flex-direction: column;
+		gap: 12px;
 	}
 	.link-mail {
 		font-weight: 400;
@@ -67,12 +64,42 @@
 		font-size: 12px;
 		line-height: 1.17;
 	}
+	.web-logo {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #4d5ae5;
+		font-family: Raleway, sans-serif;
+		font-size: 18px;
+		line-height: 1.33;
+		transition: color 250ms linear;
+		animation: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.web-logo:hover,
+	.web-logo:focus {
+		color: #404bbf;
+	}
+	.web-logo:active {
+		color: #404bbf;
+	}
+	.logo {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #2e2f42;
+		font-family: Raleway, sans-serif;
+		font-size: 18px;
+		line-height: 1.33;
+		transition: color 250ms linear;
+		animation: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.logo:hover,
+	.logo:focus {
+		color: #404bbf;
+	}
+	.logo:active {
+		color: #404bbf;
+	}
 	.header-nav-wrap {
-		display: block;
-		background-color: transparent;
-		max-width: unset;
-		height: unset;
-		position: static;
+		display: none;
 	}
 	.header-mobile-btn {
 		display: none;
@@ -80,7 +107,19 @@
 	.mobile-menu-close {
 		display: none;
 	}
+	.mobile-adress {
+		display: none;
+	}
 	.header-menu-social-list {
+		display: none;
+	}
+	.mobile-logo {
+		display: none;
+	}
+	.mobile-web-logo {
+		display: none;
+	}
+	.mobile-header-nav {
 		display: none;
 	}
 	
@@ -112,6 +151,10 @@
 		padding: 96px 0;
 	}
 	.skills-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 72px 24px;
 	}
 	.skills-list {
 		display: flex;
