@@ -46,7 +46,7 @@ button {
 	border-bottom: 1px solid #e7e9fc;
 }
 .page-header .container {
-	min-height: 80px;
+	min-height: 72px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -55,9 +55,9 @@ button {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	gap: 248px;
 }
-.web-logo {
+.mobile-web-logo {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #4d5ae5;
@@ -67,34 +67,36 @@ button {
 	transition: color 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.web-logo:hover,
-.web-logo:focus {
+.mobile-web-logo:hover,
+.mobile-web-logo:focus {
 	color: #404bbf;
 }
-.web-logo:active {
+.mobile-web-logo:active {
 	color: #404bbf;
 }
-.logo {
+.mobile-logo {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #2e2f42;
 	font-family: Raleway, sans-serif;
 	font-size: 18px;
 	line-height: 1.33;
-	margin-right: 76px;
 	transition: color 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo:hover,
-.logo:focus {
+.mobile-logo:hover,
+.mobile-logo:focus {
 	color: #404bbf;
 }
-.logo:active {
+.mobile-logo:active {
 	color: #404bbf;
 }
-.header-nav {
+.mobile-header-nav {
 	display: flex;
 	align-items: center;
+}
+.header-nav {
+	display: none;
 }
 .header-list {
 	display: flex;
@@ -187,10 +189,14 @@ button {
 	transition: fill 250ms linear;
 	animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress {
+.mobile-adress {
 	margin-left: auto;
 }
+.adress {
+	display: none;
+}
 .header-adress-list {
+	display: block;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 48px;
@@ -234,9 +240,9 @@ button {
 }
 .header-menu-social-list {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	gap: 56px;
-	margin-left: 0;
 }
 .header-menu-social-item {
 	width: 40px;
